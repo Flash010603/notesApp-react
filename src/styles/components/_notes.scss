@@ -1,0 +1,88 @@
+.note__container,.note__nav,.note__main{
+    display: flex;
+}
+.note__container,.note__main{
+    flex-direction: column;
+}
+.note__container{
+    width: 70%;
+}
+// ===========	 Navbar Notes 	=======================
+.note__nav{
+    background-color: $primary;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    .note__fecha, .note__buttons{
+        width: 50%;
+    }
+    .note__fecha{
+        color: $light-grey;
+        font-weight: bold;
+        i{
+            margin-right: 12px;
+        }
+    }
+    .note__buttons{
+        text-align: end;
+        button{
+            margin: 0 20px;
+            i{
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+// ===========	 Notes form 	=======================
+
+.note__main{
+    height: 100%;
+    padding: 20px 20px 20px 20px;
+    input, textarea{
+        // border: 1px solid black;
+        border: none;
+        outline: none;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    textarea{
+        resize: none;
+        flex: 1 1 auto;
+    }
+    input{
+        border-bottom: 1px solid black;
+        font-size: $subtitle;
+    }
+}
+.note__image{
+    
+    width: 200px;
+    max-width: 200px;
+    height: 200px;
+    max-height: 200px;
+
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 3px 3px 10px black;
+    img{
+        width: 100%;
+        display: block;
+        height: 100%;
+        vertical-align: top;
+    }
+}
+
+.note__footer{
+    background-color: rgb(221, 58, 58);
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    cursor: pointer;
+    transition: all .3s ease;
+    position: relative;
+}
+.note__footer:hover{
+    background-color: red;
+    color: white;
+}

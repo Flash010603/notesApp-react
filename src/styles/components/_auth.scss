@@ -1,0 +1,132 @@
+
+.auth__item_form input,
+.auth__item_form{
+    font-size: $text;
+}
+.auth__container_form,
+.auth__title{
+    color:$light-grey;
+}
+
+.auth__item_form, .auth__buttons{
+    display:flex;
+}
+
+.auth__main{
+    background-color:$dark-grey;
+    width: 100vw;
+    height: 100vh;
+    font-size: $title;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.auth__container_form{
+    width: 45%;
+    margin: 0 auto;
+    background-color: rgba(34, 33, 33, 0.993);
+    display: block;
+    padding-top: 25px;
+    overflow: hidden;
+}
+.auth__item_form{
+    margin: 15px 0;
+    padding:0 30px;
+    text-align: start;
+    width: 100%;
+    flex-direction: column;
+    font-weight: normal;
+    p{
+        text-align: end;
+        margin-top: 5px;
+    }
+}
+.auth__item_form input{
+    padding: 10px 0;
+}
+.auth__title{
+    padding-top: 30px;    
+}
+.auth_btn, .auth__google, .auth_btn_link{
+    width: 100%;
+    height: 70px;
+    font-size: $text;
+    border: none;
+    transition: all .2s ease;
+    outline: none;
+    border: 1px solid rgba(34, 33, 33, 0.493);
+    font-weight: normal;
+    text-decoration: none;
+}
+.auth__buttons{
+    margin-top: 15px;
+    overflow: hidden;
+    .auth_btn, .auth_btn_link{
+        background-color: rgba(87, 4, 165, 0.842);
+        color: white;
+        &:disabled{
+            opacity: .5;
+            cursor: auto;
+        }
+        &:hover{
+            background-color: rgb(87, 4, 165);
+        }
+    }
+   
+}
+.btn_login{
+    width: 91%;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.auth__google{
+    background-color: rgba(255, 255, 255, 0.87);
+    color: black;
+    &:hover{
+        background-color: rgba(255, 255, 255, 0.953);
+    }
+    .google-icon{
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+    }
+}
+
+.auth__link{
+    text-decoration: none;
+    text-align: end;
+    color: $primary;
+}
+
+// ===========	 404 	=======================
+.container_img{
+    width: 45%;
+    margin: 0 auto;
+
+}
+.img_error{
+    width: 100%;
+}
+
+.auth__errors{
+    color: rgb(255, 64, 64);
+    font-weight: normal;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    font-size: $text;
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px;
+    span{
+        font-size: 25px;
+    }
+}
+.inputs_jusn{
+    display: flex;
+    justify-content: center;
+    .auth__item_form{
+        width: 50%;
+    }
+}
+.w-75{
+    width: 70%;
+}

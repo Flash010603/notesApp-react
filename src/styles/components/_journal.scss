@@ -1,0 +1,96 @@
+.journal__container,.journal__header,.journal__entry,.journal__body{
+    display: flex;
+}
+// ===========	 SideBar 	=======================
+.journal__sidebar{
+    background-color: $dark-grey;
+    color: #f2f2f2;
+    height: 100vh;
+    padding: 25px 20px;
+    transition: all 1s ease;
+    width: 30%; //100%
+    // transform: translateX(-100%);
+    // display: none;
+    .journal__header{
+        justify-content: space-between;
+        .journal__user,.journal__button{
+           width: 50%;
+           
+        }
+        .journal__user i{
+            color: rgb(241, 241, 93);
+            // font-weight: bold;
+        }
+        .journal__button{
+            text-align: end;
+        }
+    }
+    .journal__btnCrear{
+        margin-top: 30px;
+        height: 120px;
+        p,i{
+            transition: all .2s ease;
+            color: white;
+        }
+        i{
+            font-size: $title;
+            padding-bottom: 10px;
+            &:hover,&:hover + p{
+                color: darken($color:white, $amount: 20);
+            }
+            &:hover + p{
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+}   
+// ===========	 Journal Entries 	=======================
+.journalE__container{
+    height:65%;
+    overflow-y:scroll;
+    overflow-x: hidden; 
+    padding: 15px 5px;
+    scrollbar-width: none;
+}
+
+// ===========	 Journal Entry 	=======================
+.journal__entry{
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: $dark-grey;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: all .4s ease;
+    &:hover{
+        background-color: rgba(27, 27, 27, 0.993);
+        border: 1px solid $light-grey;
+        color: white;
+        scale: 1.1;
+        translate: -25px;
+    }
+    .journal__img{
+        width:150px;
+        max-width: 150px;
+        height: 105px;
+        max-height: 105px;
+
+        background-size: cover;
+    }
+    .journal__body{
+        
+        width: 100%;
+        padding:0 10px;
+        flex-direction: column;
+        justify-content: space-between;
+        .journal__content{
+            font-size: 14px;
+        }
+        .journal__footer{
+            color: darken($color: #fff, $amount: 40);
+            text-align: end;
+            margin-bottom: 5px;
+        }
+    }
+}
